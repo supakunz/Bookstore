@@ -7,12 +7,24 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        josefin: ['var(--font-josefin)'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
         blacklight: "#282828"
       },
     },
+    screens:{
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      '2lg':'1125px',
+      'xl': '1280px',
+      '2xl': '1536px',
+      '3xl':'1700px'
+    }
   },
   plugins: [],
 };
