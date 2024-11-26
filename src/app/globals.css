@@ -12,6 +12,8 @@ body {
   overflow-y: scroll;
 }
 
+/*---------- BookList Btn ----------- */
+
 .btn-effect {
   position: relative;
 }
@@ -30,4 +32,13 @@ body {
 
 .btn-effect:hover::after {
   width: 100%;
+}
+
+/*---------- Package Section #Palax Effect ----------- */
+.package {
+  background: url("/bg-package.webp");
+  background-size: cover; /* ปรับให้ภาพครอบคลุม container */
+  background-position: center; /* ตำแหน่งภาพตรงกลาง */
+  background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+  background-attachment: fixed; /* เลื่อนพื้นหลังแบบ parallax */
 }
