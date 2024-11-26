@@ -1,4 +1,3 @@
-import localFont from "next/font/local";
 import { Josefin_Sans, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";

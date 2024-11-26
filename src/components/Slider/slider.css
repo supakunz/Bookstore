@@ -1,0 +1,71 @@
+/* .owl-dots {
+  position: absolute;
+  top: 25rem;
+  left: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.owl-dot {
+  & span {
+    font-size: 10rem;
+    background-color: blueviolet;
+  }
+} */
+
+/* --------------- Owl-prev & Owl-next ---------------- */
+.owl-nav {
+  position: absolute;
+  top: 24%;
+  left: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 97.5%;
+  z-index: -1;
+}
+
+.owl-prev {
+  & span {
+    display: inline-block;
+    font-size: 2.4rem;
+    width: 2rem;
+    visibility: hidden;
+  }
+}
+
+.owl-next {
+  & span {
+    font-size: 10rem;
+    visibility: hidden;
+  }
+}
+
+/* --------------- Real-prev & Real-next ---------------- */
+.real-nav {
+  position: absolute;
+  top: 44.5%;
+  left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 97.5%;
+  z-index: 5;
+}
+
+.real-prev svg {
+  cursor: pointer;
+  transition: ease-in-out 200ms;
+}
+
+.real-prev:hover svg {
+  transform: translateX(-3px);
+}
+
+.real-next svg {
+  cursor: pointer;
+  transition: ease-in-out 200ms;
+}
+
+.real-next:hover svg {
+  transform: translateX(3px);
+}

@@ -3,7 +3,10 @@
 import dynamic from "next/dynamic";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import slider from "./slider.css";
 import Image from "next/image";
+import { RealNext } from "./RealNext";
+import { RealPrev } from "./RealPrev";
 
 if (typeof window !== "undefined") {
   window.$ = window.jQuery = require("jquery");
@@ -16,18 +19,37 @@ const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
 const options = {
   animateOut: "fadeOut",
   autoplay: true,
-  autoplayTimeout: 3000,
+  autoplayTimeout: 6000,
   loop: true,
   items: 1,
   margin: 30,
+  nav: true,
+  mouseDrag: false,
 };
 
 const Slider = () => {
+  const handleClick = (props) => {
+    const prev = document.querySelector(".owl-prev");
+    const next = document.querySelector(".owl-next");
+
+    if (props == "next") {
+      next.click();
+    } else if (props == "prev") {
+      prev.click();
+    }
+  };
+
   return (
     <div>
       <OwlCarousel {...options}>
         {/*------------------- Slider Page 1 ------------------- */}
         <div className="item w-full h-[37.5rem] 2lg:h-[30.7rem] 3xl:h-[38.8rem] relative flex justify-center text-center 2lg:text-start 2lg:justify-start items-center bg-[#efe6d5] px-[8.5rem] 3xl:px-[14rem] overflow-hidden">
+          {/* Prev & Next Arrow */}
+          <div className="real-nav">
+            <RealPrev onClick={() => handleClick("prev")} />
+            <RealNext onClick={() => handleClick("next")} />
+          </div>
+
           <div className=" relative 2lg:absolute 2xl:right-0 -right-[3vw] 3xl:right-5 top-0">
             <div className="absolute hidden 2lg:block w-[105rem] h-[105rem] 3xl:w-[118rem] 3xl:h-[118rem] -top-[34.5rem] 3xl:-top-[36.5rem] -right-[5.5rem] 3xl:-right-[10rem] ">
               <Image
@@ -109,6 +131,12 @@ const Slider = () => {
 
         {/*------------------- Slider Page 2 ------------------- */}
         <div className="item w-full h-[37.5rem] 2lg:h-[30.7rem] 3xl:h-[38.8rem] relative flex justify-center text-center items-center">
+          {/* Prev & Next Arrow */}
+          <div className="real-nav">
+            <RealPrev onClick={() => handleClick("prev")} />
+            <RealNext onClick={() => handleClick("next")} />
+          </div>
+
           <Image
             src="/Slider/slider_01/bg01.jpg"
             fill
@@ -154,6 +182,12 @@ const Slider = () => {
 
         {/*------------------- Slider Page 3 ------------------- */}
         <div className="item w-full h-[37.5rem] 2lg:h-[30.7rem] 3xl:h-[38.8rem] text-center 2lg:text-start justify-center 2lg:justify-normal relative flex items-center bg-[#282828]">
+          {/* Prev & Next Arrow */}
+          <div className="real-nav">
+            <RealPrev onClick={() => handleClick("prev")} color={"white"} />
+            <RealNext onClick={() => handleClick("next")} color={"white"} />
+          </div>
+
           <div className="w-[27rem] h-[27rem] 3xl:w-[34rem] 3xl:h-[34rem] absolute hidden 2lg:block left-[1.5rem] 3xl:left-[11.5rem] bottom-[0rem]">
             <Image
               src="/Slider/slider_03/book.webp"
