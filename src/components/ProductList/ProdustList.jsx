@@ -28,7 +28,7 @@ const ProdustList = () => {
         </ul>
       </div>
       <div>
-        <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-[4rem]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-[4rem]">
           {bookList.map((item, index) => (
             <BookCard key={index} data={item} />
           ))}

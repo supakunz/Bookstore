@@ -11,6 +11,9 @@ const nextConfig = {
   })
 );
  return config;
+  },
+  images: {
+    formats: ['image/webp'], // รองรับไฟล์ .webp
   }
 };
 

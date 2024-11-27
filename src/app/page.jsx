@@ -1,3 +1,5 @@
+import NewsPage01 from "@/components/News/NewsPage01";
+import NewsPage02 from "@/components/News/NewsPage02";
 import Pagkage from "@/components/Package/Pagkage";
 import ProdustList from "@/components/ProductList/ProdustList";
 import Slider from "@/components/Slider/Slider";
@@ -10,6 +12,8 @@ export default function Home() {
       <ProdustList />
       <Pagkage />
       <Team />
+      <NewsPage01 />
+      <NewsPage02 />
     </section>
   );
 }
