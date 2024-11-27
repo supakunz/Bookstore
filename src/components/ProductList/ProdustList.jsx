@@ -6,7 +6,7 @@ const ProdustList = () => {
   return (
     <section className="mx-auto mt-[8rem] flex flex-col gap-[4rem]">
       <div>
-        <ul className="flex justify-center gap-[0.6rem] text-[18px] font-medium">
+        <ul className="flex flex-wrap justify-center gap-[0.6rem] text-[18px] font-medium">
           <li className="bg-black text-white p-[9px_46px] cursor-pointer">
             All
           </li>
@@ -28,7 +28,7 @@ const ProdustList = () => {
         </ul>
       </div>
       <div>
-        <div className="grid grid-cols-5 gap-x-8 gap-y-[4rem]">
+        <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-[4rem]">
           {bookList.map((item, index) => (
             <BookCard key={index} data={item} />
           ))}
