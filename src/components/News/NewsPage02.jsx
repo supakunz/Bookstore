@@ -4,7 +4,7 @@ import Image from "next/image";
 const NewsPage02 = () => {
   return (
     <section className="overflow-hidden">
-      <div className="my-[2.5rem] w-full h-[30.7rem] 3xl:h-[38.8rem] relative flex justify-center text-center 2lg:text-start 2lg:justify-end items-center px-[2rem] 3xl:px-[14rem]">
+      <div className="my-[2.5rem] mb-[10rem] w-full h-[30.7rem] 3xl:h-[38.8rem] relative flex justify-center text-center 2lg:text-start 2lg:justify-end items-center px-[2rem] 3xl:px-[14rem]">
         <div className=" relative hidden 2lg:block flex-1">
           <div className="absolute hidden 2lg:block w-[105rem] top-[2rem] left-[4rem]">
             <Image

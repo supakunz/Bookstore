@@ -1,3 +1,4 @@
+import Gallery from "@/components/Gallery/Gallery";
 import NewsPage01 from "@/components/News/NewsPage01";
 import NewsPage02 from "@/components/News/NewsPage02";
 import Pagkage from "@/components/Package/Pagkage";
@@ -14,6 +15,7 @@ export default function Home() {
       <Team />
       <NewsPage01 />
       <NewsPage02 />
+      <Gallery />
     </section>
   );
 }

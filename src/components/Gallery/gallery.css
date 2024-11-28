@@ -1,0 +1,99 @@
+@media screen and (min-width: 1125px) {
+  .item1 {
+    @apply col-span-2 row-span-2;
+  }
+
+  .item2 {
+    @apply col-start-3;
+  }
+
+  .item3 {
+    @apply col-start-4;
+  }
+
+  .item4 {
+    @apply col-start-5;
+  }
+
+  .item5 {
+    @apply col-start-6;
+  }
+
+  .item6 {
+    @apply col-start-1 row-start-3;
+  }
+
+  .item7 {
+    @apply col-start-2 row-start-3;
+  }
+
+  .item8 {
+    @apply col-start-3 row-start-3;
+  }
+
+  .item9 {
+    @apply col-start-3 row-start-2;
+  }
+
+  .item10 {
+    @apply col-span-2 row-span-2 col-start-4 row-start-2;
+  }
+
+  .item11 {
+    @apply col-start-6 row-start-2;
+  }
+
+  .item12 {
+    @apply col-start-6 row-start-3;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .item1 {
+    @apply col-span-2 row-span-2;
+  }
+
+  .item2 {
+    @apply row-start-3;
+  }
+
+  .item3 {
+    @apply row-start-3;
+  }
+
+  .item4 {
+    @apply row-start-4;
+  }
+
+  .item5 {
+    @apply row-start-4;
+  }
+
+  .item6 {
+    @apply row-start-5;
+  }
+
+  .item7 {
+    @apply row-start-5;
+  }
+
+  .item8 {
+    @apply row-start-8;
+  }
+
+  .item9 {
+    @apply row-start-8;
+  }
+
+  .item10 {
+    @apply col-span-2 row-span-2 row-start-6;
+  }
+
+  .item11 {
+    @apply row-start-9;
+  }
+
+  .item12 {
+    @apply row-start-9;
+  }
+}
