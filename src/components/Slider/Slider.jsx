@@ -60,7 +60,7 @@ const Slider = () => {
                 style={{
                   objectFit: "contain",
                   position: "absolute",
-                  zIndex: "2",
+                  zIndex: "0",
                 }}
                 quality={100}
               />
