@@ -4,7 +4,7 @@ import event from "../assets/event";
 const Event = () => {
   return (
     <section className="mb-[10rem]">
-      <div className="flex flex-col items-center text-center mb-[4.5rem]">
+      <article className="flex flex-col items-center text-center mb-[4.5rem]">
         <p className="text-[13px] text-[#999999] font-josefin tracking-[0.21rem]">
           EVENTS
         </p>
@@ -13,8 +13,8 @@ const Event = () => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-      </div>
-      <div className="flex justify-center">
+      </article>
+      <article className="flex justify-center">
         <div>
           {event.map((item) => (
             <div className="grid grid-cols-1 gap-2 md:gap-0 md:grid-cols-[1fr_1.1fr_0.66fr] text-center items-center md:text-start last:border-none border-solid border-b-[1px] border-[#E1E1E1] py-[1.8rem] md:py-[1.1rem]">
@@ -41,7 +41,7 @@ const Event = () => {
             </div>
           ))}
         </div>
-      </div>
+      </article>
     </section>
   );
 };

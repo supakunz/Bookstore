@@ -5,7 +5,7 @@ import teamList from "../assets/teamList";
 const Team = () => {
   return (
     <section>
-      <div className="flex flex-col items-center text-center mb-[5.3rem]">
+      <article className="flex flex-col items-center text-center mb-[5.3rem]">
         <p className="text-[13px] text-[#999999] font-josefin tracking-[0.21rem]">
           OUR SERVICES
         </p>
@@ -14,12 +14,12 @@ const Team = () => {
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
           nisi ut aliquip ex ea commodo consequat.
         </p>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-[3rem] lg:gap-y-0 max-w-[50rem] lg:max-w-[83rem] mx-auto">
+      </article>
+      <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-[3rem] lg:gap-y-0 max-w-[50rem] lg:max-w-[83rem] mx-auto">
         {teamList.map((item) => (
           <TeamCard key={item.id} data={item} />
         ))}
-      </div>
+      </article>
     </section>
   );
 };

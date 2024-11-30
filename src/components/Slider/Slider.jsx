@@ -40,7 +40,7 @@ const Slider = () => {
   };
 
   return (
-    <div>
+    <section>
       <OwlCarousel {...options}>
         {/*------------------- Slider Page 1 ------------------- */}
         <div className="item w-full h-[37.5rem] 2lg:h-[30.7rem] 3xl:h-[38.8rem] relative flex justify-center text-center 2lg:text-start 2lg:justify-start items-center bg-[#efe6d5] px-[8.5rem] 3xl:px-[14rem] overflow-hidden">
@@ -136,9 +136,8 @@ const Slider = () => {
             <RealPrev onClick={() => handleClick("prev")} />
             <RealNext onClick={() => handleClick("next")} />
           </div>
-
           <Image
-            src="/Slider/slider_01/bg01.jpg"
+            src="/Slider/slider_01/bg01.webp"
             fill
             loading="lazy"
             alt="bg01"
@@ -233,7 +232,7 @@ const Slider = () => {
           </div>
         </div>
       </OwlCarousel>
-    </div>
+    </section>
   );
 };
 

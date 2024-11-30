@@ -9,7 +9,7 @@ import Team from "@/components/Team/Team";
 
 export default function Home() {
   return (
-    <section className="mx-auto px-[4%]">
+    <main className="mx-auto px-[4%]">
       <Slider />
       <ProdustList />
       <Pagkage />
@@ -18,6 +18,6 @@ export default function Home() {
       <NewsPage02 />
       <Gallery />
       <Event />
-    </section>
+    </main>
   );
 }
