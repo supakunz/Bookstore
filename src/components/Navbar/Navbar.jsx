@@ -12,8 +12,8 @@ const Navbar = () => {
     <nav className="mx-auto flex justify-between p-[1.6rem_4%]">
       <div className="flex gap-[2.9rem]">
         <div className="w-[62px] h-[50px] relative">
-          <a href="">
-            <Image src="/logo.webp" fill alt="logo" quality={100} />
+          <a href="#">
+            <Image src="/logo.webp" fill sizes="100" alt="logo" quality={100} />
           </a>
         </div>
         <div className="flex gap-6 text-[20px] font-medium">

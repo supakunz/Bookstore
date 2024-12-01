@@ -42,3 +42,34 @@ body {
   background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
   background-attachment: fixed; /* เลื่อนพื้นหลังแบบ parallax */
 }
+
+/*---------- เปลี่ยนสีพื้นหลังและสีข้อความเมื่อคลุมดำ ----------- */
+::selection {
+  background-color: #d14031; /* พื้นหลังสีม่วง */
+  color: #ffffff; /* สีข้อความ */
+}
+
+/* สำหรับเบราว์เซอร์ที่ใช้ WebKit (เช่น Safari) */
+::-moz-selection {
+  background-color: #d14031; /* พื้นหลังสีม่วง */
+  color: #ffffff; /* สีข้อความ */
+}
+
+/* ----------  ScrollToTop Animation ----------  */
+@keyframes rotate3d {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  25% {
+    transform: rotate3d(0, 1, 0, 90deg);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+  75% {
+    transform: rotate3d(0, 1, 0, 270deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}

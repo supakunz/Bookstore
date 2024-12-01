@@ -6,6 +6,9 @@ import Header from "@/components/Header/Header";
 //Font Awesome Icon
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import Footer from "@/components/Footer/Footer";
+import Footer2 from "@/components/Footer/Footer2";
+import Scroll from "@/components/common/Scroll";
 config.autoAddCss = false;
 
 const josefin = Josefin_Sans({
@@ -32,6 +35,9 @@ export default function RootLayout({ children }) {
         <Header />
         <Navbar />
         {children}
+        <Footer />
+        <Footer2 />
+        <Scroll />
       </body>
     </html>
   );

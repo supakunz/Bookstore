@@ -8,7 +8,10 @@ const Gallery = () => {
     <section>
       <div className="grid grid-cols-2 grid-rows-9 2lg:grid-cols-6 2lg:grid-rows-3 gap-5 mb-[9rem]">
         {gallery.map((item) => (
-          <figure className={`${item.class} cursor-pointer  overflow-hidden`}>
+          <figure
+            key={item.id}
+            className={`${item.class} cursor-pointer  overflow-hidden`}
+          >
             <Image
               width={500}
               height={500}
@@ -16,7 +19,6 @@ const Gallery = () => {
               alt="gallery"
               src={item.image}
               style={{ width: "100%", objectFit: "contain" }}
-              key={item.id}
               className="hover:scale-[1.03] transition-all duration-700"
             />
           </figure>

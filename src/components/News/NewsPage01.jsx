@@ -40,6 +40,7 @@ const NewsPage01 = () => {
             <Image
               src="/news/section_01/news01-4.webp"
               fill
+              sizes="100"
               loading="lazy"
               alt="home1"
               style={{
@@ -54,6 +55,7 @@ const NewsPage01 = () => {
             <Image
               src="/news/section_01/news01-5.webp"
               fill
+              sizes="100"
               loading="lazy"
               alt="home1"
               style={{
@@ -68,6 +70,7 @@ const NewsPage01 = () => {
             <Image
               src="/news/section_01/news01-7.webp"
               fill
+              sizes="100"
               loading="lazy"
               alt="home1"
               style={{
@@ -82,6 +85,7 @@ const NewsPage01 = () => {
             <Image
               src="/news/section_01/news01-6.webp"
               fill
+              sizes="100"
               loading="lazy"
               alt="home1"
               style={{

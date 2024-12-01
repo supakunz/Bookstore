@@ -1,3 +1,4 @@
+import Branner from "@/components/branner/Branner";
 import Event from "@/components/Events/Event";
 import Gallery from "@/components/Gallery/Gallery";
 import NewsPage01 from "@/components/News/NewsPage01";
@@ -18,6 +19,7 @@ export default function Home() {
       <NewsPage02 />
       <Gallery />
       <Event />
+      <Branner />
     </main>
   );
 }
