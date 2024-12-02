@@ -2,6 +2,7 @@ import { Josefin_Sans, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Header from "@/components/Header/Header";
+import { AOSInit } from "@/libs/AOSInit"; //Aos Library
 
 //Font Awesome Icon
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -29,6 +30,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <AOSInit />
       <body
         className={`${josefin.variable} ${cormorant.className} antialiased`}
       >
