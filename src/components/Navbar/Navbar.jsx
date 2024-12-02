@@ -9,14 +9,14 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <nav className="mx-auto flex justify-between p-[1.6rem_4%]">
+    <nav className="mx-auto flex justify-between p-[0.6rem_9%] lg:p-[1.6rem_4%] border-solid border-b-[1px] border-[#E1E1E1] lg:border-none mb-[2.5rem] lg:mb-0">
       <div className="flex gap-[2.9rem]">
         <div className="w-[62px] h-[50px] relative">
           <a href="#">
             <Image src="/logo.webp" fill sizes="100" alt="logo" quality={100} />
           </a>
         </div>
-        <div className="flex gap-6 text-[20px] font-medium">
+        <div className="hidden lg:flex gap-6 text-[20px] font-medium">
           <ul className="flex items-center gap-[9px] text-[#D14031] cursor-pointer transition-all duration-300">
             <p>Home</p>
             <FontAwesomeIcon icon={faAngleDown} className="text-[10px]" />
@@ -51,12 +51,14 @@ const Navbar = () => {
             $0.00
           </p>
         </div>
-        <div className="w-[1px] h-[12px] bg-black"></div>
-        <FontAwesomeIcon
-          icon={faMagnifyingGlass}
-          className=" hover:text-[#D14031] cursor-pointer transition-all duration-300"
-        />
-        <div className="w-[1px] h-[12px] bg-black"></div>
+        <div className="hidden lg:block w-[1px] h-[12px] bg-black"></div>
+        <div className="hidden lg:flex items-center">
+          <FontAwesomeIcon
+            icon={faMagnifyingGlass}
+            className="hover:text-[#D14031] cursor-pointer transition-all duration-300"
+          />
+        </div>
+        <div className="hidden lg:block w-[1px] h-[12px] bg-black"></div>
         <FontAwesomeIcon
           icon={faBars}
           className=" hover:text-[#D14031] cursor-pointer transition-all duration-300"

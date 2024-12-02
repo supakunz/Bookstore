@@ -8,7 +8,7 @@ import {
 
 const Header = () => {
   return (
-    <header className=" bg-blacklight">
+    <header className=" bg-blacklight hidden lg:block">
       <div className="mx-auto px-[4%] pt-[16px] pb-[19px] text-white">
         <div className="flex justify-between items-center">
           <div>
