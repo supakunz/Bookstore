@@ -103,7 +103,7 @@ const NewsPage01 = () => {
               AUTOBIOGRAPHY
             </p>
             <h1 className="text-[35px] font-medium mb-2">
-              This month's guest host
+              This month&apos;s guest host
             </h1>
             <h3 className="text-[19px] text-[#555555] max-w-[30rem] leading-[1.8rem] tracking-normal z-10">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do

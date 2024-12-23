@@ -17,7 +17,10 @@ const Event = () => {
       <article className="flex justify-center">
         <div>
           {event.map((item) => (
-            <div className="grid grid-cols-1 gap-2 md:gap-0 md:grid-cols-[1fr_1.1fr_0.66fr] text-center items-center md:text-start last:border-none border-solid border-b-[1px] border-[#E1E1E1] py-[1.8rem] md:py-[1.1rem]">
+            <div
+              key={item.id}
+              className="grid grid-cols-1 gap-2 md:gap-0 md:grid-cols-[1fr_1.1fr_0.66fr] text-center items-center md:text-start last:border-none border-solid border-b-[1px] border-[#E1E1E1] py-[1.8rem] md:py-[1.1rem]"
+            >
               <p className="font-josefin text-[12px] text-[#999999] tracking-[0.27rem] border-solid border-r-[2px] border-[#E1E1E1] md:pr-[1.5rem]">
                 {item.date} / {item.location}
               </p>
